@@ -2,16 +2,20 @@
   "name": "bai01",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dinhvannb.github.io/Nextjs-bai01/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@next/font": "13.1.5",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",
+    "gh-pages": "^5.0.0",
     "next": "13.1.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
